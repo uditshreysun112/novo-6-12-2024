@@ -185,6 +185,7 @@ h6 {
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
+  
   }
 
   .navmenu ul {
@@ -302,6 +303,7 @@ h6 {
   .navmenu {
     padding: 0;
     z-index: 9997;
+    padding-right: 0 !important;
   }
 
   .navmenu ul {
@@ -836,7 +838,7 @@ section,
 # Why Us Section
 --------------------------------------------------------------*/
 .why-us .img-bg {
-  min-height: 500px;
+  min-height: 250px;
   position: relative;
 }
 
@@ -2445,4 +2447,38 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+#homecard{
+  height: 500px;
+}
+@media (max-width: 768px) {
+  #homecard {
+    height: 400px; /* Adjust height for medium screens */
+  }
+  #homediv{
+    height: 400px;
+  }
+  #phone-view{
+    height: 300px !important;
+    width: 130px;
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+}
+
+/* For small screens (e.g., mobile devices) */
+@media (max-width: 480px) {
+  #homecard {
+    height: 250px; /* Adjust height for small screens */
+  }
+  #homediv{
+    height: 250px !important;
+  }
+  #phone-view{
+    height: 280px !important;
+    width: 130px;
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
 }
